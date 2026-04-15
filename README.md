@@ -30,7 +30,20 @@ Al desaparecer la unidad lógica, se utilizó PhotoRec para realizar una recuper
 1. **Selección del Origen:** Identificación del disco físico de 5GB (Harddisk 1).
 2.**Tipo de Escaneo:** Se seleccionó `[Whole Disk]` para buscar fragmentos de archivos en sectores que el sistema operativo ya no reconoce como particionados.
 3.**Filtro de Archivos:** Configuración de `File Opt` para buscar específicamente cabeceras:
+   - `JPG`
+   - `PDF`
+   - `TXT`
 <p align="center">
 <img src="./img/photorec_scan.png" height="350" alt="Escaneo de PhotoRec en progreso">
 </p>
-##Conceptos tecnicos Aprendidos:
+
+## Conceptos tecnicos Aprendidos:
+1.**por que es posible recuperar los datos?**
+Cuando se ejecuta un borrado o un formateo rápido, Windows no sobreescribe los bits de información. Simplemente marca el espacio como "Disponible" en la Master File Table (MFT). Los datos siguen físicamente en los platos/celdas del disco hasta que nuevos datos ocupan su lugar.
+2.Recuperación por Firmas vs. Recuperación por Índice
+- **Recuperacion por indice (WinFR/Recuva):** Busca en el mapa del sistema de archivos. Es mas rapido pero falla si la particion esta dañada.
+- **Recuperacion por firmas(PhotoRec)**: Ignora el sistema de archivos y lee los Magic Numbers de cada sector. Es el método más efectivo para discos corruptos o formateados.
+## Resultados del laboratorio
+-**Archivos recuperados:** 100% de los archivos cargados inicialmente
+-**Observacion:** Los nombres originales de los archivos se perdieron debido a la destrucción de la MFT, pero la integridad del contenido se mantuvo intacta.
+**Documentado por:Hector Javier Guerrero Jimenez** Ciberseguridad
