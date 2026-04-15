@@ -31,6 +31,6 @@ Al desaparecer la unidad lógica, se utilizó PhotoRec para realizar una recuper
 2.**Tipo de Escaneo:** Se seleccionó `[Whole Disk]` para buscar fragmentos de archivos en sectores que el sistema operativo ya no reconoce como particionados.
 3.**Filtro de Archivos:** Configuración de `File Opt` para buscar específicamente cabeceras:
 <p align="center">
-<img src="./screenshots/photorec_scan.png" height="350" alt="Escaneo de PhotoRec en progreso">
+<img src="./img/photorec_scan.png" height="350" alt="Escaneo de PhotoRec en progreso">
 </p>
 ##Conceptos tecnicos Aprendidos:
