@@ -12,7 +12,7 @@ Este proyecto documenta el procedimiento técnico para recuperar información cr
 ## 🛠️ Fase 1: Preparación y Fallo Simulado
 Para garantizar una práctica real, se utilizó la herramienta `diskpart` para gestionar el almacenamiento desde la terminal.
 
-### Configuración del Disco:
+### Configuración del Disco mediante CMD:
 ```cmd
 diskpart
 select disk 1
